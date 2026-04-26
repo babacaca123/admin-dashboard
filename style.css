@@ -100,6 +100,8 @@ body{
 }
 .announcements:nth-child(2),  .announcements:nth-child(3){
     margin-top: 0px;
+    border-top: 2px solid var(--secondary-color);
+    /* IDK ABOUT THIS */
 }
 
 .card-three{
@@ -107,6 +109,9 @@ body{
     height: 90%;
     width: 235px;
     border-radius: 10px;
+}
+.profile img{
+
 }
 
 .content-container h4{
@@ -234,7 +239,7 @@ body{
     grid-column: 3/4; 
 }
 
-.pfp{
+.pfp, .profile img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
