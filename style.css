@@ -9,7 +9,7 @@ body{
 
 .sidebar-container{
     display: grid;
-    background-color: skyblue;
+    background-color: rgb(51, 60, 194);
     grid-row: 1 / 3;
     
 }
@@ -87,4 +87,57 @@ body{
     border: 2px;
     border-color:rgb(25, 0, 252);
     border-style: solid;
+}
+.sidebar-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 4fr;
+    
+
+}
+.sidebar-container *{
+    color: white;
+   
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+}
+.title > img{
+    width: 45px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+   
+
+}
+.menu-two{
+    margin-top: 40px;  }
+
+.menu-one,
+.menu-two{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(6, 45px);
+    width: 100px;
+}
+.menu-one img,
+.menu-two img{
+    width: 25px;
+    height: 25px;
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+.menu-one h6,
+.menu-two h6{
+    font-size: 20px;
+    
+}
+.icon{
+    filter: invert(100%);
 }
