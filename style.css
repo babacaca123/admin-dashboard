@@ -55,6 +55,7 @@ body{
 .body-text{
     grid-area: 1 / 1 / 2 / 3;
    padding-right: 20px;
+   padding-top: 10px;
    
 }
 .body-text p{
@@ -68,20 +69,44 @@ body{
     display: grid;
     grid-area: 2 / 2 / 3 / 3;
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr 1fr 4fr;
+    grid-template-rows: 3fr 50px 4fr;
     gap: 10px;
+    margin-left: 20px;
     
 }
+
 .card-two{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: white;
-    height: 150px;
-    width: 250px;
+    height: 275px;
+    width: 235px;
+    border-radius: 10px;
 }
+
+.announcements{
+    gap: 10px;
+    margin-top: 10px;
+    height: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.announcements h5{
+    margin-bottom: 0px;
+}
+.announcements p{
+    font-size: 10px;
+    margin-top: 2px;
+}
+.announcements:nth-child(2),  .announcements:nth-child(3){
+    margin-top: 0px;
+}
+
 .card-three{
     background-color: white;
-    height: 150px;
-    
-    width: 250px;
+    height: 90%;
+    width: 235px;
+    border-radius: 10px;
 }
 
 .content-container h4{
@@ -92,11 +117,17 @@ body{
     
 
 }
+.container-right h4{
+    margin-left: 0px;
+}
 .content-container > h4{
     margin-top: 40px;
     
 }
 .content-container > :first-child{
+    margin-left: 20px;
+}
+.content-container > :nth-child(2){
     margin-left: 20px;
 }
 .header-container {
