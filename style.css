@@ -42,27 +42,49 @@ body{
 }
 .container-right{
     display: grid;
+    grid-area: 2 / 2 / 3 / 3;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 4fr 1fr 4fr;
     gap: 10px;
     border: 2px;
     border-color:lawngreen;
     border-style: solid;
 }
 .card-two{
-    width: 250px;
-    height: 150px;
     background-color: white;
+    height: 150px;
+    width: 250px;
 }
-.container-left h4{
+.card-three{
+    background-color: white;
+    height: 150px;
+    
+    width: 250px;
+}
+
+.content-container h4{
     
     font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
     margin-left: 10px;
+
 }
-/* .container-left > h4{
+.header-container {
     display: grid;
-    height: 30px;
-    width: 50px;
-} */
+    background-color: white;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 3fr 4fr;
+}
+.header-left{
+    grid-area: 2 / 1 / 3 / 2;
+    border: 2px;
+    border-color:lawngreen;
+    border-style: solid;
+}
+.header-right{
+    grid-area: 2 / 2 / 3 / 3;
+    border: 2px;
+    border-color:rgb(25, 0, 252);
+    border-style: solid;
+}
