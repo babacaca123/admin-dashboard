@@ -334,3 +334,47 @@ body{
     color: white;
     border: none;
 }
+.hover-link{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: fit-content;
+
+    transition: transform 0.3s ease;
+}
+.hover-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    /* transform: scaleX(0); */
+    transition: width 0.3s ease;
+}
+.hover-link:hover::after {
+    width: 100%;
+    /* transform: scaleX(1); */
+}
+.hover-link:hover {
+    transform: translateY(-5px);
+}
+.card-btn {
+    width: 40px;
+    height: 40px;
+    background: none;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 100%;
+}
+.card-btn:hover {
+    background-color: var(--secondary-color);
+}
+.btn{
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--tertiary-color);
+}
